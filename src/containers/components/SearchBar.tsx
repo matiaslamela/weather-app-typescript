@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-export default function SearchBar({ onSearch }) {
+import { onSearch } from '../models';
+
+export default function SearchBar({ onSearch }: onSearch) {
 	const [city, setCity] = useState('');
 	return (
 		<form

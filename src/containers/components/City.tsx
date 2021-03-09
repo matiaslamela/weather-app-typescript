@@ -3,20 +3,24 @@ import './Cards.css';
 
 import Card from './Card';
 
-export default function Cards({ cities, onClose }) {
+import { city, onClose } from '../models';
+
+interface props extends onClose {
+	city: city;
+}
+
+export default function Cards({ city, onClose }: props) {
 	return (
 		<div className="cards">
-			{cities.map((c) => (
-				<Card
-					key={c.id}
-					max={c.max}
-					min={c.min}
-					name={c.name}
-					img={c.img}
-					onClose={() => onClose(c.id)}
-					id={c.id}
-				/>
-			))}
+			<Card
+				key={city.id}
+				max={city.max}
+				min={city.min}
+				name={city.name}
+				img={city.img}
+				onClose={() => onClose(city.id)}
+				id={city.id}
+			/>
 		</div>
 	);
 }

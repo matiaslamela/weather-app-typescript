@@ -3,10 +3,16 @@ import './Cards.css';
 
 import Card from './Card';
 
-export default function Cards({ cities, onClose }) {
+import { city, onClose } from '../models';
+
+export interface cardsProps extends onClose {
+	cities: city[];
+}
+
+export default function Cards({ cities, onClose }: cardsProps): JSX.Element {
 	return (
 		<div className="cards">
-			{cities.map((c) => (
+			{cities.map((c: city) => (
 				<Card
 					key={c.id}
 					max={c.max}

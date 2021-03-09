@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
 
-export default function Card({ min, max, name, img, onClose, id }) {
+import { city, onClose } from '../models';
+
+export interface cardProps extends city {
+	onClose: () => void;
+}
+export default function Card({ min, max, name, img, onClose, id }: cardProps) {
 	return (
 		<div className="card">
 			<div id="closeIcon" className="row">
