@@ -1,6 +1,5 @@
 import React from 'react';
-import Logo from '../../img/logoHenry.png';
-import SearchBar from './SearchBar.jsx';
+import SearchBar from './SearchBar';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
@@ -8,10 +7,7 @@ function Nav({ onSearch }) {
 	return (
 		<nav className="navbar navbar-dark bg-dark">
 			<Link to="/">
-				<span className="navbar-brand">
-					<img id="logoHenry" src={Logo} width="30" height="30" alt="" />
-					Henry - Weather App
-				</span>
+				<span className="navbar-brand">Henry - Weather App</span>
 			</Link>
 			<Link to="/about">
 				<span> About </span>

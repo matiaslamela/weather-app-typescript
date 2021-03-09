@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cards.css';
 
-import Card from './Card.jsx';
+import Card from './Card';
 
 export default function Cards({ cities, onClose }) {
 	return (
