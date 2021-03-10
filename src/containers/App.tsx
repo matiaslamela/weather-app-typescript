@@ -7,7 +7,7 @@ import Cards from '../containers/components/Cards';
 import About from '../containers/components/About';
 import Ciudad from '../containers/components/City';
 
-const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+const apiKey = 'Aca pongan su api key';
 
 function App() {
 	const [cities, setCities] = useState([]);
