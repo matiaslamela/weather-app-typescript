@@ -9,7 +9,7 @@ import Ciudad from '../containers/components/City';
 
 import { city, cityFetch } from './models';
 
-const apiKey: string = '4ae2636d8dfbdc3044bede63951a019b';
+const apiKey: string = 'aca pongan su API KEY';
 
 function App() {
 	const [cities, setCities] = useState<city[]>([]);
